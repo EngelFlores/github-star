@@ -1,0 +1,24 @@
+.user-box {
+  padding: 20px;
+  background-color: rgb(240, 239, 239);
+  border: 1px solid rgb(189, 188, 188);
+  border-radius: 5px;
+  margin: 0 10px;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.25);
+}
+
+.user-box__avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+
+@media (min-width: 576px) {
+  .user-box {
+    padding: 40px;
+  }
+
+  .user-box__avatar {
+    width: 30%;
+    border-radius: 50%;
+  }
+}

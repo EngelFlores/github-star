@@ -12,6 +12,15 @@ export default {
     }
   },
 
+  async getUserInfo(userName) {
+    try {
+      const url = `${baseUrl}/users/${userName}`
+      return await axios.get(url);
+    } catch (error) {
+      console.error(error);
+    }
+  },
+
   async starRepository(repoOwner, repoName) {
     try {
       const url = `${baseUrl}/user/starred/${repoOwner}/${repoName}`
